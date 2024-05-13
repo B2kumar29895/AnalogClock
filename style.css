@@ -1,0 +1,108 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 50%;
+    border: 8px solid orangered;
+    width: 420px;
+    height: 420px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(circle, #FED168,rgb(242, 255, 196),cornsilk);
+}
+
+.container div {
+    position: absolute;
+    font-size: 32px;
+    color: green;
+}
+
+#t12 {
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#t3 {
+    top: 50%;
+    right: 6px;
+    width: 30px;
+    text-align: center;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+#t6 {
+    bottom: 6px;
+    left: 50%;
+    width: 30px;
+    text-align: center;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#t9 {
+    top: 50%;
+    left: 6px;
+    width: 30px;
+    text-align: center;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.arrow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.arrow div {
+    width: 8px;
+    background-color: red;
+    height: 170px;
+    bottom: 50%;
+    transform-origin: bottom center;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+.arrow::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transform: translate(-50%);
+    position: absolute;
+    right: 44%;
+    z-index: 4;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+}
+
+.arrow .hour{
+    height: 115px;
+    /* transform: rotate(30deg); */
+    background-color: chartreuse;
+}
+
+.arrow .minute{
+    height: 165px;
+    background-color: chocolate;
+}
+
+.arrow .second {
+    height: 190px;
+    /* transform: rotate(230deg); */
+    background-color: blue  ;
+}
